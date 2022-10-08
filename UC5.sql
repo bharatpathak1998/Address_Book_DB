@@ -27,3 +27,6 @@ update AddressBook set zip = 441207 where first_name = 'Yash';
 update AddressBook set last_name = 'Kapoor' where first_name = 'Bharat';
 update AddressBook set last_name = 'Pathak' where first_name = 'Yash';
 select * from AddressBook;
+
+delete from AddressBook where first_name = 'Bharat';
+select * from AddressBook;
