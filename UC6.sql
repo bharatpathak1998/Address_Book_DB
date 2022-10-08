@@ -30,3 +30,5 @@ select * from AddressBook;
 
 delete from AddressBook where first_name = 'Bharat';
 select * from AddressBook;
+
+select first_name, last_name from AddressBook where city = 'Tumsar' or state = 'maharashtra';

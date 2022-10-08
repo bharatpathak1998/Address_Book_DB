@@ -108,3 +108,12 @@ mysql> select * from AddressBook;
 | Mohit      | Pathak    | Shivaji Nagar | Tumsar | maharashtra | 441912 | 9156845912   | pathakmohit0766@gmail.com |
 +------------+-----------+---------------+--------+-------------+--------+--------------+---------------------------+
 2 rows in set (0.00 sec)
+
+mysql> select first_name, last_name from AddressBook where city = 'Tumsar' or state = 'Maharashtra';
++------------+-----------+
+| first_name | last_name |
++------------+-----------+
+| Yash       | Pathak    |
+| Mohit      | Pathak    |
++------------+-----------+
+2 rows in set (0.00 sec)
