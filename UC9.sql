@@ -37,3 +37,8 @@ select COUNT(city) from AddressBook where city = 'Tumsar';
 select COUNT(city) from AddressBook where state = 'maharashtra';
 
 select first_name, last_name from AddressBook where city = 'Tumsar' order by first_name asc;
+
+alter table AddressBook add addressBook_Name varchar(30);
+alter table AddressBook add addressBook_Type varchar(30); 
+update AddressBook set addressBook_Name = 'family address book', addressBook_Type = 'Family' where first_name='Yash';
+update AddressBook set addressBook_Name = 'friends address book', addressBook_Type = 'Friends' where first_name='Mohit';
