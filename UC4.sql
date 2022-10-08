@@ -21,3 +21,9 @@ insert into AddressBook values
 ('Mohit', 'Pathak','Shivaji Nagar','Tumsar','maharashtra',441912,'9156845912','pathakmohit0766@gmail.com')
 ;
 select * from AddressBook;
+
+update AddressBook set address ='Andheri' where first_name = 'Yash';
+update AddressBook set zip = 441207 where first_name = 'Yash';
+update AddressBook set last_name = 'Kapoor' where first_name = 'Bharat';
+update AddressBook set last_name = 'Pathak' where first_name = 'Yash';
+select * from AddressBook;

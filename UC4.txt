@@ -70,3 +70,29 @@ mysql> select * from AddressBook;
 | Mohit      | Pathak    | Shivaji Nagar | Tumsar | maharashtra | 441912 | 9156845912   | pathakmohit0766@gmail.com |
 +------------+-----------+---------------+--------+-------------+--------+--------------+---------------------------+
 3 rows in set (0.00 sec)
+
+mysql> update AddressBook set address ='Andheri' where first_name = 'Yash';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update AddressBook set zip = 441207 where first_name = 'Yash';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update AddressBook set last_name = 'Kapoor' where first_name = 'Bharat';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update AddressBook set last_name = 'Pathak' where first_name = 'Yash';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from AddressBook;
++------------+-----------+---------------+--------+-------------+--------+--------------+---------------------------+
+| first_name | last_name | address       | city   | state       | zip    | phone_number | email                     |
++------------+-----------+---------------+--------+-------------+--------+--------------+---------------------------+
+| Bharat     | Kapoor    | Shivaji Nagar | Tumsar | maharashtra | 441912 | 7559236425   | bharatpathak099@gmail.com |
+| Yash       | Pathak    | Andheri       | Tumsar | maharashtra | 441207 | 7778925464   | yashgharde07@gmail.com    |
+| Mohit      | Pathak    | Shivaji Nagar | Tumsar | maharashtra | 441912 | 9156845912   | pathakmohit0766@gmail.com |
++------------+-----------+---------------+--------+-------------+--------+--------------+---------------------------+
+3 rows in set (0.00 sec)
