@@ -117,3 +117,19 @@ mysql> select first_name, last_name from AddressBook where city = 'Tumsar' or st
 | Mohit      | Pathak    |
 +------------+-----------+
 2 rows in set (0.00 sec)
+
+mysql> select COUNT(city) from AddressBook where city = 'Tumsar';
++-------------+
+| COUNT(city) |
++-------------+
+|           2 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> select COUNT(city) from AddressBook where state = 'maharashtra';
++-------------+
+| COUNT(city) |
++-------------+
+|           2 |
++-------------+
+1 row in set (0.00 sec)
