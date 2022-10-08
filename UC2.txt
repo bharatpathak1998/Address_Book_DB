@@ -1,0 +1,55 @@
+mysql> Show Databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.00 sec)
+
+mysql> create database AddressBookDB;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| addressbookdb      |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> use AddressBookDB;
+Database changed
+mysql> create table AddressBook
+    -> (
+    -> first_name varchar(20) not null,
+    -> last_name varchar(20) not null,
+    -> address varchar(100) not null,
+    -> city varchar(20) not null,
+    -> state varchar(20) not null,
+    -> zip int not null,
+    -> phone_number varchar(10) not null,
+    -> email varchar(50) not null
+    -> );
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> describe AddressBook;
++--------------+--------------+------+-----+---------+-------+
+| Field        | Type         | Null | Key | Default | Extra |
++--------------+--------------+------+-----+---------+-------+
+| first_name   | varchar(20)  | NO   |     | NULL    |       |
+| last_name    | varchar(20)  | NO   |     | NULL    |       |
+| address      | varchar(100) | NO   |     | NULL    |       |
+| city         | varchar(20)  | NO   |     | NULL    |       |
+| state        | varchar(20)  | NO   |     | NULL    |       |
+| zip          | int          | NO   |     | NULL    |       |
+| phone_number | varchar(10)  | NO   |     | NULL    |       |
+| email        | varchar(50)  | NO   |     | NULL    |       |
++--------------+--------------+------+-----+---------+-------+
+8 rows in set (0.00 sec)
