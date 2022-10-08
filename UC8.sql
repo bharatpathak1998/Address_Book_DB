@@ -35,3 +35,5 @@ select first_name, last_name from AddressBook where city = 'Tumsar' or state = '
 
 select COUNT(city) from AddressBook where city = 'Tumsar';
 select COUNT(city) from AddressBook where state = 'maharashtra';
+
+select first_name, last_name from AddressBook where city = 'Tumsar' order by first_name asc;

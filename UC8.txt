@@ -133,3 +133,12 @@ mysql> select COUNT(city) from AddressBook where state = 'maharashtra';
 |           2 |
 +-------------+
 1 row in set (0.00 sec)
+
+mysql> select first_name, last_name from AddressBook where city = 'Tumsar' order by first_name asc;
++------------+-----------+
+| first_name | last_name |
++------------+-----------+
+| Mohit      | Pathak    |
+| Yash       | Pathak    |
++------------+-----------+
+2 rows in set (0.00 sec)
