@@ -167,3 +167,11 @@ mysql> select * from AddressBook;
 | Mohit      | Pathak    | Shivaji Nagar | Tumsar | maharashtra | 441912 | 9156845912   | pathakmohit0766@gmail.com | friends address book | Friends          |
 +------------+-----------+---------------+--------+-------------+--------+--------------+---------------------------+----------------------+------------------+
 2 rows in set (0.00 sec)
+
+mysql> select count(addressBook_Type) from AddressBook where addressBook_Type = 'Family';
++-------------------------+
+| count(addressBook_Type) |
++-------------------------+
+|                       1 |
++-------------------------+
+1 row in set (0.00 sec)
