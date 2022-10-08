@@ -44,3 +44,7 @@ update AddressBook set addressBook_Name = 'family address book', addressBook_Typ
 update AddressBook set addressBook_Name = 'friends address book', addressBook_Type = 'Friends' where first_name='Mohit';
 
 select count(addressBook_Type) from AddressBook where addressBook_Type = 'Family';
+
+Insert into AddressBook values
+('Bharat', 'Pathak','Shivaji Nagar','Tumsar','maharashtra',441912,'7559236425','bharatpathak099@gmail.com','Home address book','Family');
+select * from AddressBook;
